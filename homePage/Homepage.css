@@ -1,0 +1,214 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.head img{
+    height: 50px;
+    width: 150px;
+    margin-left: 15px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+.head button{
+    color: white;
+    height: 35px;
+    background-color: red;
+    width: 80px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.button{
+    margin-right: 20px;
+}
+.wlcm{
+    display: flex;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 50px;
+    gap: 25px;
+}
+.wlcm img{
+    height: 70px;
+    width: 200px;
+    margin-top: 15px;
+}
+.project{
+    font-size: 35px;
+    margin-left: 50px;
+}
+.grp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.grp img {
+    height: 400px;
+    width: 600px;
+    margin: right 50px ;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    gap: 20px;
+}
+
+.start p {
+    margin: 0 0 10px 0; 
+    font-size: 35px;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+.exp {
+    font-weight: bolder;
+    margin-left: 50px;
+    font-size:30px;
+}
+.explore p{
+    margin-left: 55px;
+    margin-bottom: 20px;
+
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.task img{
+    height: 250px;
+    width: 250px;
+}
+.team{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.team img{
+    height: 250px;
+    width: 250px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.time img{
+    height: 250px;
+    width: 250px;
+}
+.calendar{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.calendar img{
+    height: 250px;
+    width: 250px;
+}
+.report{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.report img{
+    height: 250px;
+    width: 250px;
+}
+.footer-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.column h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.column a {
+    text-decoration: none;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin: 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    padding-bottom: 100px;
+}
+.last{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#ffffff,#ff9a9a);
+}
