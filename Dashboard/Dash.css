@@ -1,0 +1,94 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.search-box .icon {
+    color: black;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: red;
+}
+
+.search-box input::placeholder {
+    color: red;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head img{
+    height: 50px;
+    width: 150px;
+    margin-left: 15px;
+}
+/* .img img{
+    height: 20px;
+    width: 20px;
+    margin-right: 15px; */
+/* } */
+.wlcm{
+    display: flex;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 50px;
+    gap: 25px;
+}
+.wlcm img{
+    height: 70px;
+    width: 200px;
+    margin-top: 15px;
+}
+.btn1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.btn2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+button{
+    background-color: red;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 500px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.img img{
+    height: 150px;
+}
+.profile{
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
