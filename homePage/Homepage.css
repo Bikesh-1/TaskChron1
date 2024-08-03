@@ -212,7 +212,7 @@ body{
 .footer-container {
     width: 100%;
     max-width: 1400px;
-    padding: 50px;
+    padding: 0px;
     display: flex;
     justify-content: space-evenly;
     height: 500px;
@@ -247,7 +247,6 @@ body{
 
 .footer-logo img {
     width: 150px;
-    margin-bottom: 10px;
 }
 
 .footer-logo p {
@@ -264,11 +263,110 @@ body{
     width: 30px;
     height: 30px;
     margin: 0 10px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 .last{
     flex-direction: column;
     display: flex;
     align-items: center;
     background: linear-gradient(#ffffff,#ff9a9a);
+}
+
+@media (max-width: 1200px) {
+    .wlcm, .project, .exp, .start p {
+        font-size: 2.5rem;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wlcm, .project, .exp, .start p {
+        font-size: 2rem;
+    }
+    .grp, .task, .team, .time, .calendar, .report {
+        flex-direction: column;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wlcm, .project, .exp, .start p {
+        font-size: 1.5rem;
+    }
+    .grp, .task, .team, .time, .calendar, .report {
+        flex-direction: column;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 300px;
+    }
+}
+@media (max-width: 576px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 40px;
+        width: 120px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .head button {
+        height: 30px;
+        width: 70px;
+    }
+    .grp {
+        margin: 20px;
+    }
+    .grp img {
+        height: 200px;
+        width: 300px;
+    }
+    .start p {
+        font-size: 20px;
+    }
+    .start {
+        margin-left: 0;
+    }
+    .task, .team, .time, .calendar, .report {
+        margin-top: 50px;
+    }
+    .task img, .team img, .time img, .calendar img, .report img {
+        height: 150px;
+        width: 150px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo img {
+        width: 100px;
+    }
+    .footer-logo p {
+        font-size: 14px;
+    }
+    .column {
+        margin: 20px 0;
+    }
+    .column h3 {
+        font-size: 18px;
+    }
+    .column a {
+        font-size: 14px;
+    }
+    .last{
+        height: 100vh;
+        width: 100vh;
+    }
+    .social-media img {
+        width: 25px;
+        height: 25px;
+    }
 }
