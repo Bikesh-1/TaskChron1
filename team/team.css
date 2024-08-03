@@ -1,0 +1,93 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head img {
+    height: 50px;
+    width: 150px;
+    margin-left: 15px;
+}
+.profile {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.title {
+    margin-left: 15px;
+}
+.title p {
+    font-size: large;
+    color: red;
+    font-weight: bolder;
+}
+.grp, .create {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.grp p, .create p {
+    color: white;
+    font-size: large;
+    margin-top: 0px;
+}
+.dash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+#notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.friends-list {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.friends-list h2 {
+    text-align: center;
+    color: #333;
+}
+.friend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.friend-actions i {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #555;
+}
+.friend-actions i:hover {
+    color: #000;
+}
