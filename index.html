@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskChron</title>
-    <link rel="stylesheet" href="./homePage/Homepage.css">
+    <link rel="stylesheet" href="Homepage.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 <body>
+    
+    <div id="preloader">
+        <div class="p">TechChron</div>
+    </div>
+
+
     <div class="head">
-        <img src="./homePage/Group 53.svg" alt="logo">
+        <img src="./Group 53.svg" alt="logo">
         <div class="button">
-            <button class="btn1"> <a href="../TaskChron1/loginPage/index.html" style="text-decoration: none; color: white;">Login</a></button>
-            <button class="btn2"><a href="../TaskChron1/SignUpPage/SignUp.html" style="text-decoration: none; color: white;">SignUp</a></button>
+            <button class="btn1">Login</button>
+            <button class="btn2">SignUp</button>
         </div>
         
     </div>
     <div class="main">
-        <P class="wlcm"><span style="color: red;">Welcome to </span><img src="./homePage/Group 53.svg" alt="logo"></P>
+        <P class="wlcm"><span style="color: red;">Welcome to </span><img src="./Group 53.svg" alt="logo"></P>
         <p class="project">Your ultimate tool for seamless <span style="color: red; " >project management</span></p>
         <div class="grp">
             <div class="start">
                 <p>Ready to start your next project?</p>
-                <button class="btn"><a href="../TaskChron1/loginPage/index.html" style="text-decoration: none; color: white;">Create New project</a></button>
+                <button class="btn">Create New project</button>
             </div>
             
-            <img src="./homePage/image.png" alt="Project Image">
+            <img src="./image.png" alt="Project Image">
         </div>
     </div>
     <div class="feature">
@@ -36,7 +44,7 @@
             <P>Designed to help you and your <span style="color: red;">team</span> succeed</P>
         </div>
         <div class="task">
-            <img src="./homePage/image copy.png">
+            <img src="./image copy.png">
             <div class="txt">
                 <P style="color: red;">Task Scheduling</P>
                 <p>Easily plan and organize tasks with our intuitive scheduling tools.<br> 
@@ -51,10 +59,10 @@
                     and assign tasks to keep everyone on the same page.
                 </p>
              </div>
-            <img src="./homePage/image copy 2.png">
+            <img src="./image copy 2.png">
         </div>
         <div class="time">
-            <img src="./homePage/image copy 3.png">
+            <img src="./image copy 3.png">
             <div class="txt">
                 <P style="color: red;">Time Tracking</P>
                 <p>
@@ -71,10 +79,10 @@
                     apps to stay organized and never miss a meeting.
                 </p>
             </div>
-            <img src="./homePage/image copy 4.png">
+            <img src="./image copy 4.png">
         </div>
         <div class="report">
-            <img src="./homePage/image copy 5.png">
+            <img src="./image copy 5.png">
             <div class="txt">
                 <P style="color: red;">Reporting and Analytics</P>
                 <p>
@@ -87,7 +95,7 @@
     <div class="last">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="./homePage/Group 53.svg" alt="Logo">
+                <img src="./Group 53.svg" alt="Logo">
                 <p>Your ultimate tool for seamless <br><span style="color: #ff0000;">project management.</span></p>
             </div>
             <div class="column">
@@ -104,13 +112,13 @@
                 <a href="#">Careers</a>
                 <a href="#">Help Center</a>
             </div>
-            <div class="paragran"><p></p></div>
+            
         </div>
         <div class="social-media">
-            <i class="fa-brands fa-facebook" style="color: #000000; font-size: 30px;" ></i>
-            <i class="fa-brands fa-twitter" style="color: #000000; font-size: 30px;"></i>
-            <i class="fa-brands fa-instagram" style="color: #000000; font-size: 30px;"></i>
-            <i class="fa-brands fa-youtube" style="color: #000000; font-size: 30px;"></i>
+            <img src="./image copy 6.png" alt="Twitter">
+            <img src="./image copy 7.png" alt="Facebook">
+            <img src="./image copy 8.png" alt="Instagram">
+            <img src="./image copy 9.png" alt="YouTube">
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
