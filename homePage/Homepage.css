@@ -205,6 +205,10 @@ body{
     height: 250px;
     width: 250px;
 }
+.last {
+    height: 70vh;
+    width: 100%;
+}
 .footer-container {
     width: 100%;
     max-width: 1400px;
