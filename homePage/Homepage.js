@@ -22,7 +22,7 @@ paceOptions = {
     t1.from(".head h1,.head .button .btn1,.head .button .btn2",{    
         y:-30,
         duration:0.3,
-        delay:2.6,
+        delay:2.8,
         opacity:0,
         stagger:0.4
     })
