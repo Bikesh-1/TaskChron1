@@ -1,16 +1,120 @@
-.head{
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.head {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.head img{
+.head img {
     height: 50px;
     width: 150px;
     margin-left: 15px;
 }
-.profile{
+.profile {
     margin-right: 50px;
     display: flex;
     align-items: center;
     gap: 50px;
+}
+.main, .main2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.calendar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 800px; /* Adjust max width as needed */
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.calendar-header button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.calendar-body {
+    display: flex;
+    flex-direction: column;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.dates div {
+    width: 100%;
+    height: 60px; /* Increase height as needed */
+    text-align: center;
+    line-height: 60px; /* Match the height */
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em; /* Increase font size */
+}
+.dates div:hover {
+    background-color: #ddd;
+}
+.note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.note h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+#note-input {
+    width: 80%;
+    max-width: 600px;
+    height: 150px; /* Increase height */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em; /* Increase font size */
+}
+#save-note {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em; /* Increase font size */
+}
+#notes-list {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+.note-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Increase font size */
 }
