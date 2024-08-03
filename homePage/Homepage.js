@@ -19,10 +19,10 @@ TweenMax.from(".title", 2, {
 });
 
 var t1 = gsap.timeline()
-t1.from(".head img ,.head .button .btn1,.head .button .btn2",{    
+t1.from(".head h1,.head .button .btn1,.head .button .btn2",{    
     y:-30,
     duration:0.3,
-    delay:2,
+    delay:2.6,
     opacity:0,
     stagger:0.4
 })
