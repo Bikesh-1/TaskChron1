@@ -52,7 +52,7 @@
                 <i class="fa-solid fa-video" title="Video Call"></i>
             </div>
         </div>
-        <div class="friend" id="friend2">
+        <div class="friend" id="friend3">
             <span>Friend 3</span>
             <div class="friend-actions">
                 <i class="fa-solid fa-comment" title="Chat"></i>
@@ -60,7 +60,7 @@
                 <i class="fa-solid fa-video" title="Video Call"></i>
             </div>
         </div>
-        <div class="friend" id="friend2">
+        <div class="friend" id="friend4">
             <span>Friend 4</span>
             <div class="friend-actions">
                 <i class="fa-solid fa-comment" title="Chat"></i>
@@ -68,7 +68,7 @@
                 <i class="fa-solid fa-video" title="Video Call"></i>
             </div>
         </div>
-        <div class="friend" id="friend2">
+        <div class="friend" id="friend5">
             <span>Friend 5</span>
             <div class="friend-actions">
                 <i class="fa-solid fa-comment" title="Chat"></i>
@@ -109,19 +109,25 @@
             // Event listeners for friend actions
             document.querySelectorAll('.friend-actions .fa-comment').forEach(chatIcon => {
                 chatIcon.addEventListener('click', function() {
-                    alert('Initiate chat with ' + this.parentElement.parentElement.querySelector('span').innerText);
+                    const friendName = this.parentElement.parentElement.querySelector('span').innerText;
+                    alert(`Initiate chat with ${friendName}`);
+                    // Add logic for initiating chat here
                 });
             });
 
             document.querySelectorAll('.friend-actions .fa-phone').forEach(callIcon => {
                 callIcon.addEventListener('click', function() {
-                    alert('Initiate voice call with ' + this.parentElement.parentElement.querySelector('span').innerText);
+                    const friendName = this.parentElement.parentElement.querySelector('span').innerText;
+                    alert(`Initiate voice call with ${friendName}`);
+                    // Add logic for initiating voice call here
                 });
             });
 
             document.querySelectorAll('.friend-actions .fa-video').forEach(videoIcon => {
                 videoIcon.addEventListener('click', function() {
-                    alert('Initiate video call with ' + this.parentElement.parentElement.querySelector('span').innerText);
+                    const friendName = this.parentElement.parentElement.querySelector('span').innerText;
+                    alert(`Initiate video call with ${friendName}`);
+                    // Add logic for initiating video call here
                 });
             });
         });

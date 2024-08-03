@@ -15,19 +15,44 @@
             <input type="text" placeholder="Search">
         </div>
         <div class="profile">
-            <i class="fa-solid fa-bell" style="color: #000000; font-size: 30px;" ></i>
+            <i class="fa-solid fa-bell" style="color: #000000; font-size: 30px;"></i>
             <i class="fa-solid fa-user" style="color: #000000; font-size: 30px;"></i>
         </div>
     </div>
     <div class="name">
         <i class="fa-solid fa-notes-medical" style="color: #ff0000; font-size: 30px;"></i>
-        <p> Create Note</p>
+        <p>Create Note</p>
     </div>
     <div class="text">
         <textarea class="card-input" placeholder="Enter text here..."></textarea>
     </div>
     <div class="btn">
-        <button>Submit</button>
+        <button id="submit-btn">Submit</button>
     </div>
+
+    <!-- Container for saved notes -->
+    <div class="saved-notes">
+        <h2>Saved Notes</h2>
+        <div id="notes-container"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitBtn = document.getElementById('submit-btn');
+            const cardInput = document.querySelector('.card-input');
+            const notesContainer = document.getElementById('notes-container');
+
+            submitBtn.addEventListener('click', function() {
+                const noteText = cardInput.value.trim();
+                if (noteText) {
+                    const noteDiv = document.createElement('div');
+                    noteDiv.className = 'saved-note';
+                    noteDiv.textContent = noteText;
+                    notesContainer.appendChild(noteDiv);
+                    cardInput.value = ''; // Clear the textarea after submission
+                }
+            });
+        });
+    </script>
 </body>
 </html>

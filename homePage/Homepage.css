@@ -212,3 +212,8 @@ body{
     align-items: center;
     background: linear-gradient(#ffffff,#ff9a9a);
 }
+.social-media{
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
