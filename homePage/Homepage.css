@@ -271,6 +271,12 @@ body{
     align-items: center;
     background: linear-gradient(#ffffff,#ff9a9a);
 }
+.txt p{
+    font-size: 1.8vw;
+}
+.text p{
+    font-size: 1.8vw;
+}
 
 @media (max-width: 1200px) {
     .wlcm, .project, .exp, .start p {
@@ -291,6 +297,9 @@ body{
     .grp img, .task img, .team img, .time img, .calendar img, .report img {
         max-width: 400px;
     }
+    .txt p, .text p {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -302,6 +311,9 @@ body{
     }
     .grp img, .task img, .team img, .time img, .calendar img, .report img {
         max-width: 300px;
+    }
+    .txt p, .text p {
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 576px) {
@@ -368,5 +380,8 @@ body{
     .social-media img {
         width: 25px;
         height: 25px;
+    }
+    .txt p, .text p {
+        font-size: 1.2rem;
     }
 }
