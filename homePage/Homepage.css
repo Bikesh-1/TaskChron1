@@ -298,13 +298,13 @@ body{
         max-width: 400px;
     }
     .txt p, .text p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .wlcm, .project, .exp, .start p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .grp, .task, .team, .time, .calendar, .report {
         flex-direction: column;
@@ -382,6 +382,183 @@ body{
         height: 25px;
     }
     .txt p, .text p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for 475px width */
+@media (max-width: 475px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 35px;
+        width: 110px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .head button {
+        height: 28px;
+        width: 65px;
+        font-size: small;
+    }
+    .wlcm {
+        font-size: 1.4rem;
+        margin: 30px;
+        gap: 15px;
+    }
+    .wlcm img {
+        height: 60px;
+        width: 180px;
+    }
+    .project, .exp, .start p {
+        font-size: 1.1rem;
+        margin: 30px;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 220px;
+    }
+    .footer-container {
+        padding: 25px;
+    }
+    .footer-logo img {
+        width: 90px;
+    }
+    .footer-logo p {
+        font-size: 13px;
+    }
+    .column h3 {
+        font-size: 17px;
+    }
+    .column a {
+        font-size: 13px;
+    }
+    .social-media img {
+        width: 22px;
+        height: 22px;
+    }
+    .txt p, .text p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Media query for 375px width */
+@media (max-width: 375px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 32px;
+        width: 105px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .head button {
+        height: 26px;
+        width: 60px;
+        font-size: small;
+    }
+    .wlcm {
+        font-size: 1.3rem;
+        margin: 25px;
+        gap: 12px;
+    }
+    .wlcm img {
+        height: 55px;
+        width: 170px;
+    }
+    .project, .exp, .start p {
+        font-size: 1rem;
+        margin: 25px;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 210px;
+    }
+    .footer-container {
+        padding: 20px;
+    }
+    .footer-logo img {
+        width: 85px;
+    }
+    .footer-logo p {
+        font-size: 12px;
+    }
+    .column h3 {
+        font-size: 16px;
+    }
+    .column a {
+        font-size: 12px;
+    }
+    .social-media img {
+        width: 20px;
+        height: 20px;
+    }
+    .txt p, .text p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for 320px width */
+@media (max-width: 320px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 30px;
+        width: 100px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .head button {
+        height: 25px;
+        width: 60px;
+        font-size: small;
+    }
+    .wlcm {
         font-size: 1.2rem;
+        margin: 20px;
+        gap: 10px;
+    }
+    .wlcm img {
+        height: 50px;
+        width: 150px;
+    }
+    .project, .exp, .start p {
+        font-size: 1rem;
+        margin: 20px;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 200px;
+    }
+    .footer-container {
+        padding: 20px;
+    }
+    .footer-logo img {
+        width: 80px;
+    }
+    .footer-logo p {
+        font-size: 12px;
+    }
+    .column h3 {
+        font-size: 16px;
+    }
+    .column a {
+        font-size: 12px;
+    }
+    .social-media img {
+        width: 20px;
+        height: 20px;
+    }
+    .txt p, .text p {
+        font-size: 1rem;
     }
 }
