@@ -1,5 +1,10 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .search-box {
@@ -31,26 +36,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px;
 }
 
 .head img {
     height: 50px;
     width: 150px;
-    margin-left: 15px;
 }
 
 .profile {
-    margin-right: 50px;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 
 .name {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-left: 20px;
+    padding: 15px;
 }
 
 .name p {
@@ -59,8 +63,31 @@ body {
     color: red;
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.note-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 15px;
+}
+
+.text {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
 .card-input {
-    width: 1000px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -73,18 +100,9 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height: 100vh; */
-}
-
 .btn {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 20px;
 }
 
 button {
@@ -97,17 +115,21 @@ button {
     font-size: large;
     font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
 }
 
 .saved-notes {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 300px;
+    flex: 1;
+    max-width: 300px;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 .saved-notes h2 {
