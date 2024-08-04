@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const dateDiv = document.createElement('div');
             dateDiv.textContent = date;
             const dateKey = formatDate(year, month, date);
-            
+
             if (notes[dateKey]) {
                 dateDiv.classList.add('date-with-note');
             }
@@ -46,13 +46,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         prevSelectedDiv.classList.remove('selected-date');
                     }
                 }
-                
+
                 selectedDate = dateKey;
                 selectedDateSpan.textContent = selectedDate;
-                noteInput.value = notes[selectedDate] || '';
+                noteInput.value = '';
                 dateDiv.classList.add('selected-date');
                 renderNotes();
             });
+
             datesContainer.appendChild(dateDiv);
         }
     }
@@ -60,10 +61,28 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderNotes() {
         notesList.innerHTML = '';
         if (notes[selectedDate]) {
-            notes[selectedDate].forEach(noteText => {
+            notes[selectedDate].forEach((noteText, index) => {
                 const noteItem = document.createElement('div');
                 noteItem.className = 'note-item';
-                noteItem.textContent = noteText;
+
+                const noteTextSpan = document.createElement('span');
+                noteTextSpan.textContent = noteText;
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.textContent = 'Delete';
+                deleteBtn.className = 'delete-note-btn';
+                deleteBtn.addEventListener('click', function() {
+                    notes[selectedDate].splice(index, 1);
+                    if (notes[selectedDate].length === 0) {
+                        delete notes[selectedDate];
+                    }
+                    localStorage.setItem('notes', JSON.stringify(notes));
+                    renderNotes();
+                    renderCalendar(currentYear, currentMonth);
+                });
+
+                noteItem.appendChild(noteTextSpan);
+                noteItem.appendChild(deleteBtn);
                 notesList.appendChild(noteItem);
             });
         }

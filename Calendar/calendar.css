@@ -231,3 +231,17 @@ body {
     font-weight: bold;
     color: #ff0000;
 }
+.delete-note-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.8em;
+}
+
+.delete-note-btn:hover {
+    background-color: #ff2222;
+}
