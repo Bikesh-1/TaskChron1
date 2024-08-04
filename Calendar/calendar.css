@@ -26,8 +26,10 @@ body {
 .main, .main2 {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px;
     flex-wrap: wrap;
+    width: 50%;
+
 }
 
 .calendar {
@@ -68,7 +70,7 @@ body {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1.9vw;
 }
 
 .dates {
@@ -89,6 +91,10 @@ body {
     font-size: 1.2em;
 }
 
+.maindiv{
+    display: flex;
+
+}
 .dates div:hover {
     background-color: #ddd;
 }
@@ -97,6 +103,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .note h2 {
