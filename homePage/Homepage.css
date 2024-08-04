@@ -215,7 +215,7 @@ body{
     padding: 0px;
     display: flex;
     justify-content: space-evenly;
-    height: 500px;
+    height: 50vh;
 }
 
 .column {
@@ -255,16 +255,38 @@ body{
 
 .social-media {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: center; 
+    align-items: center; 
+    gap: 4vw; 
+    padding: 10px;
 }
 
-.social-media img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    padding-bottom: 10px;
+.social-media i {
+    color: #000000; 
+    font-size: 30px; 
+    transition: color 0.3s; 
 }
+
+.social-media i:hover {
+    transform: scale(1.2); 
+}
+
+.social-media .fa-facebook:hover {
+    color: #3a5fb1; 
+}
+
+.social-media .fa-twitter:hover {
+    color: #1da1f2; 
+}
+
+.social-media .fa-instagram:hover {
+    color: #e62649;
+}
+
+.social-media .fa-youtube:hover {
+    color: #ff0000;
+}
+
 .last{
     flex-direction: column;
     display: flex;
@@ -278,44 +300,224 @@ body{
     font-size: 1.8vw;
 }
 
-@media (max-width: 1200px) {
-    .wlcm, .project, .exp, .start p {
-        font-size: 2.5rem;
+/* Media Query for devices with width 1200px or less */
+@media screen and (max-width: 1200px) {
+    .title-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
     }
-    .grp img, .task img, .team img, .time img, .calendar img, .report img {
-        max-width: 500px;
+
+    .title-bar .title-image {
+        max-width: 80px; /* Adjust the size of the image */
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between image and text */
+    }
+
+    .title-bar .title-text {
+        font-size: 20px; /* Adjust the font size */
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head img {
+        max-width: 80px; /* Adjust the logo size */
+        margin-bottom: 10px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between buttons */
+    }
+
+    .main .wlcm {
+        font-size: 1.5rem; /* Adjust the welcome text size */
+        text-align: center;
+    }
+
+    .main .project {
+        font-size: 1.2rem; /* Adjust the project text size */
+        text-align: center;
+    }
+
+    .grp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grp .start {
+        text-align: center;
+    }
+
+    .grp .homepageimg {
+        max-width: 100%; /* Adjust the image size */
+        margin-top: 20px;
+    }
+
+    .feature .task,
+    .feature .team,
+    .feature .time,
+    .feature .calendar,
+    .feature .report {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 80%; /* Adjust the image size */
+        margin-bottom: 10px;
+    }
+
+    .feature .txt,
+    .feature .text {
+        text-align: center;
+    }
+
+    .last .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .last .column {
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-media i {
+        font-size: 25px; /* Adjust the icon size */
     }
 }
 
+
+/* Media query for devices with a max-width of 992px */
 @media (max-width: 992px) {
-    .wlcm, .project, .exp, .start p {
-        font-size: 2rem;
+    /* General adjustments */
+    .head img {
+        width: 150px; /* Adjust logo size */
     }
-    .grp, .task, .team, .time, .calendar, .report {
+
+    .button {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    .grp img, .task img, .team img, .time img, .calendar img, .report img {
-        max-width: 400px;
+
+    .btn1, .btn2 {
+        width: 100%;
+        margin-bottom: 10px;
     }
-    .txt p, .text p {
-        font-size: 1.5rem;
+
+    .main {
+        text-align: center;
+    }
+
+    .homepageimg {
+        width: 100%; /* Make image responsive */
+        height: auto;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task, .team, .time, .calendar, .report {
+        width: 100%;
+        text-align: center;
+    }
+
+    .task img, .team img, .time img, .calendar img, .report img {
+        width: 80%; /* Adjust image sizes */
+        height: auto;
+    }
+
+    .social-media i {
+        font-size: 25px; /* Adjust social media icons size */
+        margin: 0 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
     }
 }
 
+
+/* Media Query for screens 768px and below */
 @media (max-width: 768px) {
-    .wlcm, .project, .exp, .start p {
-        font-size: 1.2rem;
-    }
-    .grp, .task, .team, .time, .calendar, .report {
+    .head {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .grp img, .task img, .team img, .time img, .calendar img, .report img {
-        max-width: 300px;
+
+    .head img {
+        max-width: 150px; /* Adjust logo size */
     }
-    .txt p, .text p {
-        font-size: 1.5rem;
+
+    .button {
+        margin-top: 10px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .grp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepageimg {
+        width: 100%;
+        max-width: 400px; /* Adjust image size */
+    }
+
+    .feature {
+        padding: 20px;
+    }
+
+    .feature .task, .feature .team, .feature .time, .feature .calendar, .feature .report {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 100%; /* Make images responsive */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        font-size: 24px; /* Adjust social media icon size */
+    }
+
+    .social-media i {
+        margin: 0 10px;
     }
 }
+
 @media (max-width: 576px) {
     .head {
         flex-direction: column;
