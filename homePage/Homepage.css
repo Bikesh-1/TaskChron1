@@ -416,9 +416,7 @@ body{
 
 /* Styles for 425px screen width */
 @media (max-width: 426px) {
-    body{
-        background-color: rgb(79, 250, 0);
-    }
+
     .head {
         flex-direction: column;
         align-items: center;
@@ -427,22 +425,54 @@ body{
         height: 10vh;
         width: auto;
     }
-    .head button {
-        width: 30vh;
+    .head .btn1 .btn2{
+        display: flex;
+        flex-direction: column;
+
     }
-    
+    .head button {
+        width: 25vh;
+    }
     .wlcm {
+        display: flex;
+        flex-direction: column;
         font-size: 8vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 2.5vw;
+        gap: 0px;
+    }
+    .main-image img{
+        margin-top: 0px;
     }
     .project {
         font-size: 4vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 2.5vw;
     }
+
     .grp img {
         height: 250px;
         width: 350px;
     }
     .start p {
-        font-size: 20px;
+        font-size: 4vw;
+        
+    }
+    .start{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding: 2.5vw;
+        margin-right: 10vw;
+    }
+    .homepageimg{
+        height: 10vh;
+        width: auto;
     }
     .feature img {
         max-width: 70%;
@@ -457,31 +487,19 @@ body{
 
     .button {
         flex-direction: column;
-        gap: 10px;
     }
-    .wlcm {
-        font-size: 40px;
-        text-align: center;
-    }
-    .project {
-        font-size: 25px;
-        text-align: center;
-    }
-    .grp {
-        flex-direction: column;
-        align-items: center;
-    }
-    .grp img {
-        height: 34vh;
-        width: auto;
-    }
-    .start p {
-        font-size: 25px;
-        text-align: center;
+    .exp ,.exp2 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     .task, .team, .time, .calendar, .report{
         font-size: 2.5vw;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        gap: 0px;
     }
     .feature .team,
     .feature .calendar{
@@ -497,7 +515,22 @@ body{
         text-align: center;
     }
     .feature img {
-        height: 34vh;
+        height: 24vh;
         width: auto;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10vw;
+        padding: 5vw;
+    }
+    .last{
+        height: 100vh;
+        gap: 10vh;
+    }
+    .txt{
+        font-size: 3.5vw;
     }
 }
