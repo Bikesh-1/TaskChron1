@@ -10,32 +10,61 @@
 </head>
 <body>
     <div class="head">
-        <img src="./Group 53.png">
-        <div class="search-box">
-            <input type="text" placeholder="Search">
-        </div>
+        <img src="./Group 53.png" alt="Logo">
         <div class="profile">
-            <i class="fa-solid fa-bell" style="color: #000000; font-size: 30px;" ></i>
+            <i class="fa-solid fa-search" style="color: #000000; font-size: 30px;"></i>
+            <i class="fa-solid fa-bell" style="color: #000000; font-size: 30px;"></i>
             <i class="fa-solid fa-user" style="color: #000000; font-size: 30px;"></i>
+        </div>
+        <div class="hamburger">
+            <i class="fa fa-bars" style="color: #000000; font-size: 30px;"></i>
         </div>
     </div>
     <div class="wlcm">
-        <P class="wlcm"><span style="color: red;">Welcome to </span><img src="./Group 53.png" alt="logo"></P>
+        <p class="wlcm"><span style="color: red;">Welcome to </span><img src="./Group 53.png" alt="logo"></p>
     </div>
     <div class="main">
-        <div class="btn1">
-            <button><i class="fa-solid fa-notes-medical" style="color: #ffffff;"></i><a href="../CreateNote/note.html" style="text-decoration: none; color: white;">    Create Note</a> </button>
-            <button><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i><a href="../team/team.html" style="text-decoration: none; color: white;">  Team Collaboration</a> </button>
-            <button> <i class="fa-solid fa-stopwatch" style="color: #ffffff;"></i><a href="../Time/time.html" style="text-decoration: none; color: white;"> Time Tracking</a> </button>
+        <div class="btn-group">
+            <div class="btn1">
+                <button><i class="fa-solid fa-notes-medical" style="color: #ffffff;"></i><a href="../CreateNote/note.html" style="text-decoration: none; color: white;"> Create Note</a></button>
+                <button><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i><a href="../team/team.html" style="text-decoration: none; color: white;"> Team Collaboration</a></button>
+                <button><i class="fa-solid fa-stopwatch" style="color: #ffffff;"></i><a href="../Time/time.html" style="text-decoration: none; color: white;"> Time Tracking</a></button>
+            </div>
+            <div class="btn2">
+                <button><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i><a href="../Calendar/calendar.html" style="text-decoration: none; color: white;"> Calendar</a></button>
+                <button><i class="fa-solid fa-chart-line" style="color: #ffffff;"></i> Report & Analytic</button>
+                <button><i class="fa-solid fa-bars-progress" style="color: #ffffff;"></i><a href="../TaskScheduling/task.html" style="text-decoration: none; color: white;"> Task Scheduling</a></button>
+            </div>
         </div>
-        <div class="btn2">
-            <button> <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i><a href="../Calendar/calendar.html" style="text-decoration: none; color: white;">  Calendar</a></button>
-            <button> <i class="fa-solid fa-chart-line" style="color: #ffffff;"></i> Report & Analytic</button>
-            <button><i class="fa-solid fa-bars-progress" style="color: #ffffff;"></i> <a href="../TaskScheduling/task.html" style="text-decoration: none; color: white;">Task Scheduling</a></button>
+        <div class="img">
+            <img src="./image copy.png" alt="Illustration">
         </div>
     </div>
-    <div class="img">
-        <img src="./image copy.png">
+
+    <!-- Hamburger Menu -->
+    <div class="menu-overlay">
+        <div class="menu">
+            <a href="../CreateNote/note.html">Create Note</a>
+            <a href="../team/team.html">Team Collaboration</a>
+            <a href="../Time/time.html">Time Tracking</a>
+            <a href="../Calendar/calendar.html">Calendar</a>
+            <a href="#">Report & Analytic</a>
+            <a href="../TaskScheduling/task.html">Task Scheduling</a>
+        </div>
     </div>
+
+    <script>
+        // Hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.menu-overlay').classList.toggle('active');
+        });
+
+        // Close menu when clicking outside of it
+        document.querySelector('.menu-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

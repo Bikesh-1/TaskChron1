@@ -1,94 +1,223 @@
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.search-box {
-    display: flex;
-    align-items: center;
-    border: 2px solid grey;
-    border-radius: 25px;
-    padding: 5px 10px;
+    margin: 0;
+    padding: 0;
 }
 
-.search-box .icon {
-    color: black;
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-.search-box input {
-    border: none;
-    outline: none;
-    font-size: 18px;
-    color: red;
-}
-
-.search-box input::placeholder {
-    color: red;
-}
-.head{
+.head {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 20px;
 }
-.head img{
-    height: 50px;
-    width: 150px;
+
+.head img {
+    height: 4.5vw;
+    width: 16vw;
     margin-left: 15px;
 }
-/* .img img{
-    height: 20px;
-    width: 20px;
-    margin-right: 15px; */
-/* } */
-.wlcm{
+
+.wlcm {
     display: flex;
     align-items: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bolder;
-    margin-left: 50px;
-    gap: 25px;
+    margin-left: 3vw;
+    gap: 2vw;
 }
-.wlcm img{
-    height: 70px;
-    width: 200px;
-    margin-top: 15px;
+
+.wlcm img {
+    height: 5vw;
+    width: 18vw;
 }
-.btn1{
+
+.btn-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 2vw;
 }
-.btn2{
+
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 2vw;
+    margin-top: 1vw;
 }
-.main{
+.btn-group{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    margin-top: 50px;
+    flex-direction: row;
 }
-button{
+
+button {
     background-color: red;
     color: white;
     border: none;
-    height: 50px;
-    width: 500px;
-    border-radius: 15px;
-    font-size: 20px;
+    height: 7vh;
+    width: 70vh;
+    border-radius: 1.1vw;
     font-weight: bold;
-}
-.img img{
-    height: 150px;
-}
-.profile{
-    margin-right: 50px;
+    font-size: 2.5vw;
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: center;
+    margin: 1vw;
+}
+
+.img img {
+    height: 18vw;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hamburger Menu Styles */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.menu-overlay.active {
+    display: flex;
+}
+
+.menu {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    button {
+        height: 8vw;
+        width: 80vw;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head img {
+        height: 8vw;
+        width: 28vw;
+    }
+
+    .wlcm {
+        flex-direction: column;
+        align-items: center;
+        font-size: 4vw;
+        margin-left: 0;
+    }
+
+    .wlcm img {
+        height: 10vw;
+        width: 30vw;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 5vw;
+        margin-top: 0;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    button {
+        height: 10vw;
+        width: 90vw;
+        font-size: 3vw;
+    }
+
+    .img img {
+        height: 25vw;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .profile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head img {
+        height: 10vw;
+        width: 35vw;
+        margin-left: 0;
+    }
+
+    .wlcm {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 6vw;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 6vw;
+    }
+
+    button {
+        height: 12vw;
+        width: 100vw;
+        font-size: 4vw;
+    }
+
+    .img img {
+        height: 30vw;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .profile {
+        display: none;
+    }
 }

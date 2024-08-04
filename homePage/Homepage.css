@@ -306,8 +306,6 @@ body{
 .text p{
     font-size: 1.8vw;
 }
-
-/* Media Query for devices with width 1200px or less */
 @media screen and (max-width: 1200px) {
     .title-bar {
         flex-direction: column;
@@ -354,7 +352,7 @@ body{
     .grp {
         flex-direction: column;
         align-items: center;
-    }
+    }e
 
     .grp .start {
         text-align: center;
