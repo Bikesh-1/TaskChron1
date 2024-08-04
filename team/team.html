@@ -27,110 +27,44 @@
             <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
             <p>Create Group</p>
         </div>
-        <div class="create">
-            <i class="fa-solid fa-user-group" style="color: #ffffff;"></i>
-            <p>Group Name</p>
+        <div id="toggle-groups-btn" class="grp">
+            <i class="fa-solid fa-eye-slash" style="color: #ffffff;"></i>
+            <p>Toggle Groups</p>
         </div>
     </div>
+    <input type="text" id="search-friends" placeholder="Search Friends..." style="margin-top: 20px; height: 30px;border-radius: 10px; border: #ff0000 solid; width: 300px; display: block; margin-left: auto; margin-right: auto;">
+
     <div id="groups-container" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"></div>
 
     <div class="friends-list">
         <h2>Friends List</h2>
         <div class="friend" id="friend1">
-            <span>Friend 1</span>
+            <span>Friend 1 <span class="status offline">(Offline)</span></span>
             <div class="friend-actions">
                 <i class="fa-solid fa-comment" title="Chat"></i>
                 <i class="fa-solid fa-phone" title="Voice Call"></i>
                 <i class="fa-solid fa-video" title="Video Call"></i>
             </div>
         </div>
-        <div class="friend" id="friend2">
-            <span>Friend 2</span>
+        <div class="friend" id="friend1">
+            <span>Friend 1 <span class="status offline">(Online)</span></span>
             <div class="friend-actions">
                 <i class="fa-solid fa-comment" title="Chat"></i>
                 <i class="fa-solid fa-phone" title="Voice Call"></i>
                 <i class="fa-solid fa-video" title="Video Call"></i>
             </div>
         </div>
-        <div class="friend" id="friend3">
-            <span>Friend 3</span>
+        <div class="friend" id="friend1">
+            <span>Friend 1 <span class="status offline">(Offline)</span></span>
             <div class="friend-actions">
                 <i class="fa-solid fa-comment" title="Chat"></i>
                 <i class="fa-solid fa-phone" title="Voice Call"></i>
                 <i class="fa-solid fa-video" title="Video Call"></i>
             </div>
         </div>
-        <div class="friend" id="friend4">
-            <span>Friend 4</span>
-            <div class="friend-actions">
-                <i class="fa-solid fa-comment" title="Chat"></i>
-                <i class="fa-solid fa-phone" title="Voice Call"></i>
-                <i class="fa-solid fa-video" title="Video Call"></i>
-            </div>
-        </div>
-        <div class="friend" id="friend5">
-            <span>Friend 5</span>
-            <div class="friend-actions">
-                <i class="fa-solid fa-comment" title="Chat"></i>
-                <i class="fa-solid fa-phone" title="Voice Call"></i>
-                <i class="fa-solid fa-video" title="Video Call"></i>
-            </div>
-        </div>
-        <!-- Add more friends as needed -->
+        <!-- Repeat for more friends -->
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const createGroupBtn = document.getElementById('create-group-btn');
-            const groupsContainer = document.getElementById('groups-container');
-            const notificationIcon = document.getElementById('notification-icon');
-            const notificationCount = document.getElementById('notification-count');
-            let notifications = 0;
-
-            createGroupBtn.addEventListener('click', function() {
-                const groupName = prompt('Enter group name:');
-                if (groupName) {
-                    const groupDiv = document.createElement('div');
-                    groupDiv.className = 'create';
-                    groupDiv.innerHTML = `
-                        <i class="fa-solid fa-user-group" style="color: #ffffff;"></i>
-                        <p>${groupName}</p>
-                    `;
-                    groupsContainer.appendChild(groupDiv);
-                }
-            });
-
-            notificationIcon.addEventListener('click', function() {
-                notifications++;
-                notificationCount.textContent = notifications;
-                notificationCount.style.display = 'inline';
-            });
-
-            // Event listeners for friend actions
-            document.querySelectorAll('.friend-actions .fa-comment').forEach(chatIcon => {
-                chatIcon.addEventListener('click', function() {
-                    const friendName = this.parentElement.parentElement.querySelector('span').innerText;
-                    alert(`Initiate chat with ${friendName}`);
-                    // Add logic for initiating chat here
-                });
-            });
-
-            document.querySelectorAll('.friend-actions .fa-phone').forEach(callIcon => {
-                callIcon.addEventListener('click', function() {
-                    const friendName = this.parentElement.parentElement.querySelector('span').innerText;
-                    alert(`Initiate voice call with ${friendName}`);
-                    // Add logic for initiating voice call here
-                });
-            });
-
-            document.querySelectorAll('.friend-actions .fa-video').forEach(videoIcon => {
-                videoIcon.addEventListener('click', function() {
-                    const friendName = this.parentElement.parentElement.querySelector('span').innerText;
-                    alert(`Initiate video call with ${friendName}`);
-                    // Add logic for initiating video call here
-                });
-            });
-        });
-    </script>
+    <script src="team.js"></script>
 </body>
 </html>

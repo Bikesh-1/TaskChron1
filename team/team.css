@@ -1,10 +1,17 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .head img {
     height: 50px;
@@ -20,6 +27,8 @@ body {
 }
 .title {
     margin-left: 15px;
+    padding: 20px 0;
+    text-align: center;
 }
 .title p {
     font-size: large;
@@ -36,11 +45,23 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
 }
 .grp p, .create p {
     color: white;
     font-size: large;
     margin-top: 0px;
+}
+.grp .remove-group-btn, .create .remove-group-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px 5px;
 }
 .dash {
     display: flex;
@@ -60,6 +81,21 @@ body {
     padding: 5px 10px;
 }
 
+.dropdown-content {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+}
+.dropdown-content p {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
 .friends-list {
     margin-top: 50px;
     padding: 20px;
@@ -72,6 +108,13 @@ body {
 .friends-list h2 {
     text-align: center;
     color: #333;
+}
+#search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
 }
 .friend {
     display: flex;
