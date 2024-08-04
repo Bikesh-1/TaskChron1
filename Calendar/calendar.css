@@ -123,7 +123,7 @@ body {
 }
 
 #save-note {
-    background-color: #007bff;
+    background-color: #ff0000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -147,7 +147,7 @@ body {
     font-size: 1.2em;
 }
 
-/* Tablet styles */
+
 @media (max-width: 768px) {
     .calendar, .note {
         width: 90%;
@@ -221,4 +221,13 @@ body {
     .note-item {
         font-size: 1em;
     }
+}
+.selected-date {
+    color: #ff0000;
+}
+
+.date-with-note {
+    border: 2px solid #ff0000;
+    font-weight: bold;
+    color: #ff0000;
 }

@@ -33,10 +33,24 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let date = 1; date <= lastDate; date++) {
             const dateDiv = document.createElement('div');
             dateDiv.textContent = date;
+            const dateKey = formatDate(year, month, date);
+            
+            if (notes[dateKey]) {
+                dateDiv.classList.add('date-with-note');
+            }
+
             dateDiv.addEventListener('click', function() {
-                selectedDate = formatDate(year, month, date);
+                if (selectedDate) {
+                    const prevSelectedDiv = document.querySelector(`.selected-date`);
+                    if (prevSelectedDiv) {
+                        prevSelectedDiv.classList.remove('selected-date');
+                    }
+                }
+                
+                selectedDate = dateKey;
                 selectedDateSpan.textContent = selectedDate;
                 noteInput.value = notes[selectedDate] || '';
+                dateDiv.classList.add('selected-date');
                 renderNotes();
             });
             datesContainer.appendChild(dateDiv);
@@ -46,18 +60,30 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderNotes() {
         notesList.innerHTML = '';
         if (notes[selectedDate]) {
-            const noteItem = document.createElement('div');
-            noteItem.className = 'note-item';
-            noteItem.textContent = notes[selectedDate];
-            notesList.appendChild(noteItem);
+            notes[selectedDate].forEach(noteText => {
+                const noteItem = document.createElement('div');
+                noteItem.className = 'note-item';
+                noteItem.textContent = noteText;
+                notesList.appendChild(noteItem);
+            });
         }
     }
 
     saveNoteBtn.addEventListener('click', function() {
         if (selectedDate) {
-            notes[selectedDate] = noteInput.value;
-            localStorage.setItem('notes', JSON.stringify(notes));
-            renderNotes();
+            if (!notes[selectedDate]) {
+                notes[selectedDate] = [];
+            }
+            const newNote = noteInput.value.trim();
+            if (newNote) {
+                notes[selectedDate].push(newNote);
+                localStorage.setItem('notes', JSON.stringify(notes));
+                renderNotes();
+                renderCalendar(currentYear, currentMonth);
+                noteInput.value = ''; // Clear input after saving
+            } else {
+                alert('Please enter a note.');
+            }
         } else {
             alert('Please select a date first.');
         }
