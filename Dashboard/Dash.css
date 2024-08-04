@@ -120,20 +120,25 @@ button {
         flex-direction: column;
         gap: 4vw;
     }
+
     button {
-        font-size: 1.5vw;
+        font-size: 1.6vw;
     }
+    button {
+        height: 6vw;
+        width: 59vh;
+    }
+
 }
 @media screen and (max-width: 1024px) {
     .main {
         flex-direction: column;
         gap: 4vw;
     }
-
     button {
-        height: 8vw;
-        width: 80vw;
-        font-size: 2vw;
+        height: 6vh;
+        width: 48vh;
+        font-size: 1.6vw;
     }
 }
 
@@ -142,7 +147,9 @@ button {
         height: 8vw;
         width: 28vw;
     }
-
+    body{
+        background-color: aqua;
+    }
     .wlcm {
         flex-direction: column;
         align-items: center;
@@ -163,7 +170,6 @@ button {
 
     .btn-group {
         flex-direction: column;
-        gap: 4vw;
     }
 
     button {
@@ -185,7 +191,7 @@ button {
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
     .head {
         flex-direction: column;
         align-items: center;
@@ -198,7 +204,7 @@ button {
     }
 
     .wlcm {
-        font-size: 5vw;
+        font-size: 4.5vw;
         text-align: center;
     }
 
@@ -213,8 +219,8 @@ button {
     }
 
     button {
-        height: 12vw;
-        width: 100vw;
+        height: 5vh;
+        width: 40vh;
         font-size: 4vw;
     }
 
