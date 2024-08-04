@@ -3,11 +3,14 @@ body{
     margin: 0;
     padding: 0;
 }
-
+::selection{
+    background-color: red;
+    color: #ffffff;
+}
 .pace {
     pointer-events: none;
     user-select: none;
-    z-index: 2000;
+    z-index: 100;
     position: fixed;
     margin: auto;
     top: 0;
@@ -268,7 +271,11 @@ body{
 }
 
 .social-media i:hover {
-    transform: scale(1.2); 
+    transform: scale(1.5); 
+}
+
+.main .main-image:hover {
+    transform: scale(1.1); 
 }
 
 .social-media .fa-facebook:hover {
