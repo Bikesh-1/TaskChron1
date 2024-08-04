@@ -115,6 +115,15 @@ button {
 }
 
 /* Media Queries for Different Screen Sizes */
+@media screen and (max-width: 1440px) {
+    .main {
+        flex-direction: column;
+        gap: 4vw;
+    }
+    button {
+        font-size: 1.5vw;
+    }
+}
 @media screen and (max-width: 1024px) {
     .main {
         flex-direction: column;
