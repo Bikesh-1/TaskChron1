@@ -112,8 +112,21 @@ button:hover {
     background-color: #c0392b;
 }
 
+@media  (max-width:1024px) {
+    
+    #savedTasksButton{
+        display: none;
+    }
+    .main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 3vh;
+    }
+}
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
     .main-container {
         flex-direction: row;
         align-items: flex-start;
@@ -126,12 +139,33 @@ button:hover {
         max-width: 300px;
     }
 
-    #savedTasksButton {
+    .task-list {
         display: none;
+        position: static;
+        width: 100%;
     }
+
+    #savedTasksButton {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 1.1em;
+        margin-left: 30px;
+    }
+
+    #savedTasksButton:hover {
+        background-color: #b92929;
+    }
+
 }
 
-@media (max-width: 599px) {
+@media (max-width: 425px) {
     .task-list {
         display: none;
         position: static;
