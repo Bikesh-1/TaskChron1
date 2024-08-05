@@ -415,10 +415,8 @@ body{
 }
 
 /* Styles for 425px screen width */
-@media (max-width: 425px) {
-    body{
-        background-color:#3a5fb1 ;
-    }
+@media (max-width: 426px) {
+
 
     .head {
         flex-direction: column;
@@ -465,7 +463,6 @@ body{
         margin-bottom: 0px;
         padding: 2.5vw;
     }
-
     .grp img {
         height: 250px;
         width: 350px;
@@ -531,13 +528,14 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 10vw;
-        padding: 5vw;
+    }
+    .social-media{
+        margin-top: 10vh;
     }
     .last{
         height: 100vh;
         gap: 10vh;
-    }
+}
     .txt{
         font-size: 3.5vw;
     }
