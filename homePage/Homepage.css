@@ -211,6 +211,7 @@ body{
 .last {
     height: 70vh;
     width: 100%;
+    margin-top: 10vh;
 }
 .footer-container {
     width: 100%;
@@ -305,467 +306,231 @@ body{
 }
 .text p{
     font-size: 1.8vw;
+}/* Styles for 1440px screen width */
+@media (max-width: 1440px) {
+    .head img {
+        height: 45px;
+        width: 135px;
+    }
+    .head button {
+        width: 75px;
+    }
+    .wlcm {
+        font-size: 48px;
+    }
+    .project {
+        font-size: 33px;
+    }
+    .grp img {
+        height: 380px;
+        width: 570px;
+    }
+    .start p {
+        font-size: 33px;
+    }
 }
-@media screen and (max-width: 1200px) {
-    .title-bar {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
 
-    .title-bar .title-image {
-        max-width: 80px; /* Adjust the size of the image */
-        margin-right: 0;
-        margin-bottom: 10px; /* Add space between image and text */
+/* Styles for 1024px screen width */
+@media (max-width: 1024px) {
+    .head img {
+        height: 40px;
+        width: 120px;
     }
+    .head button {
+        width: 70px;
+    }
+    .wlcm {
+        font-size: 45px;
+    }
+    .project {
+        font-size: 30px;
+    }
+    .grp img {
+        height: 350px;
+        width: 520px;
+    }
+    .start p {
+        font-size: 30px;
+    }
+}
 
-    .title-bar .title-text {
-        font-size: 20px; /* Adjust the font size */
-    }
+/* Styles for 768px screen width */
+@media (max-width: 768px) {
 
     .head {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
-
     .head img {
-        max-width: 80px; /* Adjust the logo size */
+        height: 35px;
+        width: 105px;
         margin-bottom: 10px;
     }
 
     .button {
-        display: flex;
         flex-direction: column;
-        gap: 10px; /* Space between buttons */
+        gap: 10px;
     }
-
-    .main .wlcm {
-        font-size: 1.5rem; /* Adjust the welcome text size */
+    .wlcm {
+        font-size: 40px;
         text-align: center;
     }
-
-    .main .project {
-        font-size: 1.2rem; /* Adjust the project text size */
+    .project {
+        font-size: 25px;
         text-align: center;
     }
-
     .grp {
         flex-direction: column;
         align-items: center;
-    }e
-
-    .grp .start {
+    }
+    .grp img {
+        height: 34vh;
+        width: auto;
+    }
+    .start p {
+        font-size: 25px;
         text-align: center;
     }
 
-    .grp .homepageimg {
-        max-width: 100%; /* Adjust the image size */
-        margin-top: 20px;
+    .task, .team, .time, .calendar, .report{
+        font-size: 2.5vw;
     }
-
-    .feature .task,
     .feature .team,
+    .feature .calendar{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .feature .task,
     .feature .time,
-    .feature .calendar,
     .feature .report {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
     .feature img {
-        max-width: 80%; /* Adjust the image size */
-        margin-bottom: 10px;
-    }
-
-    .feature .txt,
-    .feature .text {
-        text-align: center;
-    }
-
-    .last .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .last .column {
-        margin-bottom: 20px;
-    }
-
-    .social-media {
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .social-media i {
-        font-size: 25px; /* Adjust the icon size */
+        height: 34vh;
+        width: auto;
     }
 }
 
+/* Styles for 425px screen width */
+@media (max-width: 426px) {
 
-/* Media query for devices with a max-width of 992px */
-@media (max-width: 992px) {
-    /* General adjustments */
-    .head img {
-        width: 150px; /* Adjust logo size */
+    .head {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .button {
+    .head img {
+        height: 10vh;
+        width: auto;
+    }
+    .head .btn1 .btn2{
         display: flex;
         flex-direction: column;
-        align-items: center;
+
+    }
+    .head button {
+        width: 25vh;
+    }
+    .wlcm {
+        display: flex;
+        flex-direction: column;
+        font-size: 8vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 2.5vw;
+        gap: 0px;
+    }
+    .main-image img{
+        margin-top: 0px;
+    }
+    .project {
+        font-size: 4vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 2.5vw;
     }
 
-    .btn1, .btn2 {
-        width: 100%;
+    .grp img {
+        height: 250px;
+        width: 350px;
+    }
+    .start p {
+        font-size: 4vw;
+        
+    }
+    .start{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding: 2.5vw;
+        margin-right: 10vw;
+    }
+    .homepageimg{
+        height: 10vh;
+        width: auto;
+    }
+    .feature img {
+        max-width: 70%;
         margin-bottom: 10px;
     }
 
-    .main {
-        text-align: center;
-    }
-
-    .homepageimg {
-        width: 100%; /* Make image responsive */
-        height: auto;
-    }
-
-    .feature {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .task, .team, .time, .calendar, .report {
-        width: 100%;
-        text-align: center;
-    }
-
-    .task img, .team img, .time img, .calendar img, .report img {
-        width: 80%; /* Adjust image sizes */
-        height: auto;
-    }
-
-    .social-media i {
-        font-size: 25px; /* Adjust social media icons size */
-        margin: 0 10px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .column {
-        margin-bottom: 20px;
-    }
-}
-
-
-/* Media Query for screens 768px and below */
-@media (max-width: 768px) {
-    .head {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     .head img {
-        max-width: 150px; /* Adjust logo size */
+        height: 35px;
+        width: 105px;
+        margin-bottom: 10px;
     }
 
     .button {
-        margin-top: 10px;
-    }
-
-    .main {
-        padding: 20px;
-    }
-
-    .grp {
         flex-direction: column;
+    }
+    .exp ,.exp2 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .task, .team, .time, .calendar, .report{
+        font-size: 2.5vw;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        gap: 0px;
+    }
+    .feature .team,
+    .feature .calendar{
+        flex-direction: column-reverse;
         align-items: center;
-    }
-
-    .homepageimg {
-        width: 100%;
-        max-width: 400px; /* Adjust image size */
-    }
-
-    .feature {
-        padding: 20px;
-    }
-
-    .feature .task, .feature .team, .feature .time, .feature .calendar, .feature .report {
-        flex-direction: column;
         text-align: center;
     }
-
+    .feature .task,
+    .feature .time,
+    .feature .report {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .feature img {
-        max-width: 100%; /* Make images responsive */
+        height: 24vh;
+        width: auto;
     }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .column {
-        margin-bottom: 20px;
-    }
-
-    .social-media {
-        font-size: 24px; /* Adjust social media icon size */
-    }
-
-    .social-media i {
-        margin: 0 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .head {
-        flex-direction: column;
+    .footer-container{
+        display: flex;
+        justify-content: center;
         align-items: center;
-    }
-    .head img {
-        height: 40px;
-        width: 120px;
-    }
-    .button {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-    .head button {
-        height: 30px;
-        width: 70px;
-    }
-    .grp {
-        margin: 20px;
-    }
-    .grp img {
-        height: 200px;
-        width: 300px;
-    }
-    .start p {
-        font-size: 20px;
-    }
-    .start {
-        margin-left: 0;
-    }
-    .task, .team, .time, .calendar, .report {
-        margin-top: 50px;
-    }
-    .task img, .team img, .time img, .calendar img, .report img {
-        height: 150px;
-        width: 150px;
-    }
-    .footer-container {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-logo img {
-        width: 100px;
-    }
-    .footer-logo p {
-        font-size: 14px;
-    }
-    .column {
-        margin: 20px 0;
-    }
-    .column h3 {
-        font-size: 18px;
-    }
-    .column a {
-        font-size: 14px;
+        margin: 10vw;
+        padding: 5vw;
     }
     .last{
         height: 100vh;
-        width: 100vh;
+        gap: 10vh;
     }
-    .social-media img {
-        width: 25px;
-        height: 25px;
-    }
-    .txt p, .text p {
-        font-size: 1rem;
-    }
-}
-
-/* Media query for 475px width */
-@media (max-width: 475px) {
-    .head {
-        flex-direction: column;
-        align-items: center;
-    }
-    .head img {
-        height: 35px;
-        width: 110px;
-    }
-    .button {
-        margin-right: 0;
-        margin-top: 5px;
-    }
-    .head button {
-        height: 28px;
-        width: 65px;
-        font-size: small;
-    }
-    .wlcm {
-        font-size: 1.4rem;
-        margin: 30px;
-        gap: 15px;
-    }
-    .wlcm img {
-        height: 60px;
-        width: 180px;
-    }
-    .project, .exp, .start p {
-        font-size: 1.1rem;
-        margin: 30px;
-    }
-    .grp img, .task img, .team img, .time img, .calendar img, .report img {
-        max-width: 220px;
-    }
-    .footer-container {
-        padding: 25px;
-    }
-    .footer-logo img {
-        width: 90px;
-    }
-    .footer-logo p {
-        font-size: 13px;
-    }
-    .column h3 {
-        font-size: 17px;
-    }
-    .column a {
-        font-size: 13px;
-    }
-    .social-media img {
-        width: 22px;
-        height: 22px;
-    }
-    .txt p, .text p {
-        font-size: 1.1rem;
-    }
-}
-
-/* Media query for 375px width */
-@media (max-width: 375px) {
-    .head {
-        flex-direction: column;
-        align-items: center;
-    }
-    .head img {
-        height: 32px;
-        width: 105px;
-    }
-    .button {
-        margin-right: 0;
-        margin-top: 5px;
-    }
-    .head button {
-        height: 26px;
-        width: 60px;
-        font-size: small;
-    }
-    .wlcm {
-        font-size: 1.3rem;
-        margin: 25px;
-        gap: 12px;
-    }
-    .wlcm img {
-        height: 55px;
-        width: 170px;
-    }
-    .project, .exp, .start p {
-        font-size: 1rem;
-        margin: 25px;
-    }
-    .grp img, .task img, .team img, .time img, .calendar img, .report img {
-        max-width: 210px;
-    }
-    .footer-container {
-        padding: 20px;
-    }
-    .footer-logo img {
-        width: 85px;
-    }
-    .footer-logo p {
-        font-size: 12px;
-    }
-    .column h3 {
-        font-size: 16px;
-    }
-    .column a {
-        font-size: 12px;
-    }
-    .social-media img {
-        width: 20px;
-        height: 20px;
-    }
-    .txt p, .text p {
-        font-size: 1rem;
-    }
-}
-
-/* Media query for 320px width */
-@media (max-width: 320px) {
-    .head {
-        flex-direction: column;
-        align-items: center;
-    }
-    .head img {
-        height: 30px;
-        width: 100px;
-    }
-    .button {
-        margin-right: 0;
-        margin-top: 5px;
-    }
-    .head button {
-        height: 25px;
-        width: 60px;
-        font-size: small;
-    }
-    .wlcm {
-        font-size: 1.2rem;
-        margin: 20px;
-        gap: 10px;
-    }
-    .wlcm img {
-        height: 50px;
-        width: 150px;
-    }
-    .project, .exp, .start p {
-        font-size: 1rem;
-        margin: 20px;
-    }
-    .grp img, .task img, .team img, .time img, .calendar img, .report img {
-        max-width: 200px;
-    }
-    .footer-container {
-        padding: 20px;
-    }
-    .footer-logo img {
-        width: 80px;
-    }
-    .footer-logo p {
-        font-size: 12px;
-    }
-    .column h3 {
-        font-size: 16px;
-    }
-    .column a {
-        font-size: 12px;
-    }
-    .social-media img {
-        width: 20px;
-        height: 20px;
-    }
-    .txt p, .text p {
-        font-size: 1rem;
+    .txt{
+        font-size: 3.5vw;
     }
 }
