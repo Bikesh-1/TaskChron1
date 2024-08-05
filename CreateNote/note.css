@@ -1,147 +1,306 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .search-box {
-    display: flex;
-    align-items: center;
-    border: 2px solid grey;
-    border-radius: 25px;
-    padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 25px;
+  padding: 5px 10px;
 }
 
 .search-box .icon {
-    color: black;
-    font-size: 20px;
-    margin-right: 5px;
+  color: black;
+  font-size: 20px;
+  margin-right: 5px;
 }
 
 .search-box input {
-    border: none;
-    outline: none;
-    font-size: 18px;
-    color: red;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: red;
 }
 
 .search-box input::placeholder {
-    color: red;
+  color: red;
 }
 
 .head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .head img {
-    height: 50px;
-    width: 150px;
+  height: 50px;
+  width: 150px;
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .name {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
 }
 
 .name p {
-    font-size: 30px;
-    font-weight: bold;
-    color: red;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    height: 100%;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .note-section {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 15px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 15px;
 }
 
 .text {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .card-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    height: 400px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 400px;
+  box-sizing: border-box;
 }
 
 .card-input::placeholder {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 button {
-    background-color: red;
-    text-align: center;
-    border: none;
-    height: 50px;
-    width: 100px;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
+  background-color: red;
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 100px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: darkred;
+  background-color: darkred;
 }
 
 .saved-notes {
-    flex: 1;
-    max-width: 300px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
+  flex: 1;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
 }
 
 .saved-notes h2 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .saved-note {
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+@media only screen and (max-width: 1440px) {
+  
+    .search-box input {
+    font-size: 2.6vw;
+  }
+
+  .name p {
+    font-size: 4.5vw;
+  }
+
+  .card-input {
+    font-size: 2.8vh;
+    height: 60vh;
+  }
+
+  button {
+    height: 5vw;
+    width: 30vw;
+    font-size: medium;
+  }
+
+  .saved-notes h2 {
+    font-size: 1.8vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  
+    .search-box input {
+    font-size: 2.6vw;
+  }
+
+  .name p {
+    font-size: 4.5vw;
+  }
+
+  .card-input {
+    font-size: 2.8vh;
+    height: 60vh;
+  }
+
+  button {
+    height: 5vh;
+    width: 30vh;
+    font-size: medium;
+  }
+
+  .saved-notes {
+    max-width: 50vh;
+  }
+
+  .saved-notes h2 {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+    .head {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .search-box{
+    display: none;
+  }
+
+  .name p {
+    font-size:4vh;
+  }
+
+  .card-input {
+    font-size: 3.2vw;
+    height: 45vh;
+    width: 70vh;
+  }
+
+  button {
+    height: 6vh;
+    width: 30vh;
+    font-size: medium;
+  }
+
+  .saved-notes {
+    max-width: 70vh;
+  }
+
+  .saved-notes h2 {
+    font-size: 2.9vw;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .profile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+    .head {
+    flex-direction: row;
+    align-items: center;
+  }
+  .search-box {
+    display: none;
+  }
+  .name p {
+    font-size:4vh;
+  }
+
+  .card-input {
+    font-size: 3.9vw;
+    height:45vh ;
+    width: 60vh;
+  }
+  button {
+    height: 5vh;
+    width: 30vh;
+    font-size:medium;
+  }
+
+  .saved-notes {
+    max-width: 50vh;
+  }
+
+  .saved-notes h2 {
+    font-size: 3vw;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .profile {
+    display: none;
+  }
 }

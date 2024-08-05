@@ -415,7 +415,7 @@ body{
 }
 
 /* Styles for 425px screen width */
-@media (max-width: 426px) {
+@media (max-width: 425px) {
 
     .head {
         flex-direction: column;
