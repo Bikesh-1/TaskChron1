@@ -176,7 +176,13 @@ body {
 }
 
 /* Mobile styles */
+
 @media (max-width: 480px) {
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .head {
         flex-direction: column;
         align-items: center;
@@ -184,17 +190,18 @@ body {
     }
 
     .profile {
+        display: none;
         gap: 10px;
         margin-right: 0;
     }
 
     .calendar-header {
-        flex-direction: column;
+        flex-direction:row;
         gap: 10px;
     }
 
     .days {
-        font-size: 1em;
+        font-size: 2vw;
     }
 
     .dates {
@@ -202,14 +209,14 @@ body {
     }
 
     .dates div {
-        height: 40px;
+        height: 5vh;
         line-height: 40px;
-        font-size: 0.9em;
+        font-size: 2.7vw;
     }
 
     #note-input {
         width: 90%;
-        height: 100px;
+        height: 20vh;
         font-size: 0.9em;
     }
 
@@ -219,7 +226,7 @@ body {
     }
 
     .note-item {
-        font-size: 1em;
+        font-size: 1.2vw;
     }
 }
 .selected-date {

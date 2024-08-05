@@ -191,9 +191,6 @@ button {
 }
 
 @media screen and (max-width: 430px) {
-    body{
-        background-color: aqua;
-    }
 
     .head {
         flex-direction: row;
