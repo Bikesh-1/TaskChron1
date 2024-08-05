@@ -1,48 +1,121 @@
-.head img{
-    height: 50px;
-    width: 150px;
-    margin-left: 15px;
+.head{
+    display: flex;
 }
-.main{
+.head img {
+    height: 8vh;
+    width: auto;
+    margin-left: 2vh;
+}
+
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 50px;
-
+    margin-top: 5vh;
 }
+
 .Back {
     display: flex;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 3.8vw;
 }
-.input{
+
+.input {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3vh;
 }
+
 .input-field {
-    width: 450px;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    font-size: 16px;
+    width: 50vh;
+    padding: 1vw;
+    border: 0.1vw solid #000;
+    border-radius: 1.1vw;
+    font-size: 1.2vw;
 }
+
 .input-field::placeholder {
-    color: #777;
+    color: red;
 }
-.btn{
+
+.btn {
     background-color: red;
     border: none;
     color: white;
-    margin-top: 40px;
-    height: 40px;
-    width: 80px;
+    margin-top: 2.5vh;
+    height: 6vh;
+    width: 18vh;
     font-size: larger;
     font-weight: 600;
     border-radius: 10px;
- }
- .last a{
-   color:red;
- }
+}
+
+.last a {
+    color: red;
+}
+
+/* Media Queries */
+
+/* Tablets and above (768px and above) */
+@media (max-width: 1024px) {
+ 
+    .input-field {
+        width: 50vh;
+    }
+    
+    .btn {
+        width: 30vh;
+        height: 5vh;
+    }
+
+    .Back {
+        font-size: 4.8vw;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+
+    .head{
+        justify-content: center;
+    }
+    .input-field {
+        width: 50vh;
+        font-size: 2.6vw;
+    }
+
+    .btn {
+        width: 30vh;
+        height: 5vh;
+    }
+
+    .Back {
+        font-size: 4.9vw;
+    }
+}
+
+/* Mobile Devices (425px and below) */
+@media (max-width: 425px) {
+
+    .input-field {
+        width: 40vh;
+        height: 2.5vh;
+        font-size: 2.5vw;
+    }
+
+    .btn {
+        width: 20vh;
+        height: 4vh;
+        font-size:larger;
+    }
+
+    .Back {
+        font-size: 5vh;
+    }
+
+    .main {
+        margin-top: 5vw;
+    }
+}

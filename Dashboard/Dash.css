@@ -190,8 +190,11 @@ button {
     }
 }
 
-@media screen and (max-width: 425px) {
-    
+@media screen and (max-width: 430px) {
+    body{
+        background-color: aqua;
+    }
+
     .head {
         flex-direction: row;
         align-items: center;
@@ -204,7 +207,7 @@ button {
     }
 
     .wlcm {
-        font-size: 4.5vw;
+        font-size: 5.7vw;
         text-align: center;
     }
 
@@ -215,13 +218,13 @@ button {
 
     .btn-group {
         flex-direction: column;
-        gap: 6vw;
+        gap: 2vw;
     }
 
     button {
-        height: 5vh;
-        width: 40vh;
-        font-size: 4vw;
+        height: 10vw;
+        width: 90vw;
+        font-size: 3.5vw;
     }
 
     .img img {
