@@ -1,12 +1,15 @@
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
-::selection{
+
+::selection {
     background-color: red;
     color: #ffffff;
 }
+
+/* Preloader */
 .pace {
     pointer-events: none;
     user-select: none;
@@ -21,10 +24,10 @@ body{
     border: 0px;
     height: 2px;
     overflow: hidden;
-    background:white;
-  }
-  
-  .pace .pace-progress {
+    background: white;
+}
+
+.pace .pace-progress {
     box-sizing: border-box;
     transform: translate3d(0, 0, 0);
     max-width: 400px;
@@ -37,44 +40,45 @@ body{
     height: 100vh;
     width: 100%;
     background: red;
-  }
-  
-  .pace.pace-inactive {
-    display: none;
-  }
-  
-  #preloader{
-    width:100%;
-    height:100vh;
-    background:white;
-    overflow:hidden;
-    position:fixed;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  
-  .p {
-    font-size: 4vw;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color:red;
-  }
-  
-.head img{
-    height: 50px;
-    width: 150px;
-    margin-left: 15px;
 }
 
-.head{
+.pace.pace-inactive {
+    display: none;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+    position: fixed;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p {
+    font-size: 4vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+}
+
+/* Header */
+.head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
-    
+    padding: 0 20px;
 }
-.head button{
+
+.head img {
+    height: 50px;
+    width: 150px;
+}
+
+.head button {
     color: white;
     height: 35px;
     background-color: red;
@@ -83,13 +87,17 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     font-weight: 500;
-    margin-left: 30px;
     border-radius: 20px;
+    margin-left: 10px;
 }
-.button{
-    margin-right: 20px;
+
+.button {
+    display: flex;
+    gap: 10px;
 }
-.wlcm{
+
+/* Main Content */
+.wlcm {
     display: flex;
     align-items: center;
     font-family: 'Dancing Script', cursive;
@@ -98,26 +106,30 @@ body{
     margin-left: 50px;
     gap: 25px;
 }
-.wlcm img{
+
+.wlcm img {
     height: 70px;
     width: 200px;
     margin-top: 15px;
 }
-.project{
+
+.project {
     font-size: 35px;
     margin-left: 50px;
 }
+
 .grp {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 50px;
+    flex-wrap: wrap;
 }
 
 .grp img {
     height: 400px;
     width: 600px;
-    margin: right 50px ;
+    margin-right: 50px;
 }
 
 .start {
@@ -131,7 +143,6 @@ body{
 .start p {
     margin: 0 0 10px 0; 
     font-size: 35px;
-
 }
 
 .btn {
@@ -143,76 +154,48 @@ body{
     border: none;
     border-radius: 10px;
 }
+
+/* Feature Section */
 .exp {
     font-weight: bolder;
     margin-left: 50px;
-    font-size:30px;
+    font-size: 30px;
 }
-.explore p{
+
+.explore p {
     margin-left: 55px;
     margin-bottom: 20px;
+}
 
-}
-.task{
+.task,
+.team,
+.time,
+.calendar,
+.report {
     display: flex;
     align-items: center;
     gap: 50px;
     justify-content: space-evenly;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
-.task img{
+
+.task img,
+.team img,
+.time img,
+.calendar img,
+.report img {
     height: 250px;
     width: 250px;
 }
-.team{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-.team img{
-    height: 250px;
-    width: 250px;
-}
-.time{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-.time img{
-    height: 250px;
-    width: 250px;
-}
-.calendar{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-.calendar img{
-    height: 250px;
-    width: 250px;
-}
-.report{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
-.report img{
-    height: 250px;
-    width: 250px;
-}
+
+/* Footer Section */
 .last {
     height: 70vh;
     width: 100%;
     margin-top: 10vh;
 }
+
 .footer-container {
     width: 100%;
     max-width: 1400px;
@@ -220,6 +203,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     height: 50vh;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -275,10 +259,6 @@ body{
     transform: scale(1.5); 
 }
 
-.main .main-image:hover {
-    transform: scale(1.1); 
-}
-
 .social-media .fa-facebook:hover {
     color: #3a5fb1; 
 }
@@ -295,18 +275,23 @@ body{
     color: #ff0000;
 }
 
-.last{
+.last {
     flex-direction: column;
     display: flex;
     align-items: center;
-    background: linear-gradient(#ffffff,#ff9a9a);
+    background: linear-gradient(#ffffff, #ff9a9a);
 }
-.txt p{
+
+.txt p {
     font-size: 1.8vw;
 }
-.text p{
+
+.text p {
     font-size: 1.8vw;
-}/* Styles for 1440px screen width */
+}
+
+/* Media Queries for different screen sizes */
+/* 1440px screen width */
 @media (max-width: 1440px) {
     .head img {
         height: 45px;
@@ -330,7 +315,7 @@ body{
     }
 }
 
-/* Styles for 1024px screen width */
+/* 1024px screen width */
 @media (max-width: 1024px) {
     .head img {
         height: 40px;
@@ -354,12 +339,10 @@ body{
     }
 }
 
-/* Styles for 768px screen width */
+/* 768px screen width */
 @media (max-width: 768px) {
-
     .head {
-        flex-direction: row;
-        align-items: center;
+        padding: 0 10px;
     }
     .head img {
         height: 35px;
@@ -382,6 +365,7 @@ body{
     .grp {
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
     .grp img {
         height: 34vh;
@@ -392,11 +376,11 @@ body{
         text-align: center;
     }
 
-    .task, .team, .time, .calendar, .report{
+    .task, .team, .time, .calendar, .report {
         font-size: 2.5vw;
     }
     .feature .team,
-    .feature .calendar{
+    .feature .calendar {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
@@ -414,69 +398,58 @@ body{
     }
 }
 
-/* Styles for 425px screen width */
-@media (max-width: 426px) {
-
+/* 425px screen width */
+@media (max-width: 425px) {
     .head {
-        flex-direction: column;
+        padding: 0 10px;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
     }
     .head img {
-        height: 10vh;
-        width: auto;
+        height: 35px;
+        width: 105px;
     }
-    .head .btn1 .btn2{
-        display: flex;
+    .button {
         flex-direction: column;
-
-    }
-    .head button {
-        width: 25vh;
+        align-items: flex-end;
+        gap: 5px;
     }
     .wlcm {
-        display: flex;
-        flex-direction: column;
-        font-size: 8vw;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 2.5vw;
-        gap: 0px;
-    }
-    .main-image img{
-        margin-top: 0px;
+        font-size: 38px;
+        text-align: center;
     }
     .project {
-        font-size: 4vw;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 2.5vw;
+        font-size: 20px;
+        text-align: center;
     }
-
+    .grp {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
     .grp img {
-        height: 250px;
-        width: 350px;
-    }
-    .start p {
-        font-size: 4vw;
-        
-    }
-    .start{
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        padding: 2.5vw;
-        margin-right: 10vw;
-    }
-    .homepageimg{
-        height: 10vh;
+        height: 30vh;
         width: auto;
     }
-    .feature img {
-        max-width: 70%;
-        margin-bottom: 10px;
+    .start p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .homepageimg{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button {
+        flex-direction: row; /* Ensure buttons stay in a row on mobile */
+        gap: 10px;
     }
 
     .head img {
@@ -484,53 +457,8 @@ body{
         width: 105px;
         margin-bottom: 10px;
     }
-
-    .button {
-        flex-direction: column;
-    }
-    .exp ,.exp2 {
-        margin-bottom: 0px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .task, .team, .time, .calendar, .report{
-        font-size: 2.5vw;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-        gap: 0px;
-    }
-    .feature .team,
-    .feature .calendar{
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-    }
-    .feature .task,
-    .feature .time,
-    .feature .report {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .feature img {
-        height: 24vh;
-        width: auto;
-    }
-    .footer-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 10vw;
-        padding: 5vw;
-    }
-    .last{
-        height: 100vh;
-        gap: 10vh;
-    }
-    .txt{
-        font-size: 3.5vw;
+    .homepageimg{
+        height: 20px;
+        width: 20px;
     }
 }
